@@ -1,0 +1,24 @@
+.roundBorder {
+    border-radius: 1.5rem;
+    height: 3rem;
+    width: 100%;
+    align-items: center;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    text-align: center;
+}
+
+.alignCenter {
+    text-align: center;
+}
