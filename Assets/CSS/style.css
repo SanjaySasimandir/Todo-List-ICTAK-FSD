@@ -23,3 +23,15 @@ th {
 .alignCenter {
     text-align: center;
 }
+
+footer {
+    background-color: #16161a;
+    text-align: center;
+    color: #2cb67d;
+    border-top-left-radius:1.5rem ;
+    border-top-right-radius:1.5rem ;
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    bottom:0;
+}
