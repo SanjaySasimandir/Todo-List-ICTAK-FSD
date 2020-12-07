@@ -21,6 +21,7 @@
         crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/CSS/style.css">
 </head>
 
@@ -38,10 +39,11 @@
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="col-lg-9"></div>
+        <div class="col-lg-8"></div>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="#">Todo List<span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="todo.html">Todo List</a>
                 <a class="nav-link" href="login.html">Log Out</a>
             </div>
         </div>
@@ -49,32 +51,28 @@
 
     <!-- Navigation Bar Ends Here -->
 
-    <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
+    <div class="container" style="padding-top: 3rem;">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="card" style="padding: 5px;">
-
-                    <table id="table" width=100%>
-                        <tr>
-                            <th>User ID</th>
-                            <th>ID</th>
-                            <th style="padding: 5px;">Title</th>
-                            <th>Completed</th>
-                        </tr>
-
-                    </table>
-                    <br>
-                    <div id="progress" class="row justify-content-center" style="padding-top: 5px;">
-                        <div class="spinner-grow text-primary"></div>
-                        <div class="spinner-grow text-success"></div>
-                        <div class="spinner-grow text-primary"></div>
+            <div class="col-lg-7">
+                <div class="card">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6" style="padding: 3rem;">
+                            <h4 style="text-align: center; font-family: 'Abel', sans-serif;">Click below to start
+                                working on your Todo List</h4>
+                            <br>
+                            <a href="./todo.html" class="btn btn-primary"
+                                style="padding-top: 10px; height: 3rem; border-radius: 1.5rem; width: 100%; font-family: 'Righteous', cursive;">
+                                Open Todo List</a>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-flex">
+                            <img src="./Assets/Images/plan.jpg" alt="Login Image" width="100%">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="Assets/JS/home.js"></script>
 
 </body>
 

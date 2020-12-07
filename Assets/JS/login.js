@@ -21,8 +21,8 @@ function triggerError() {
     errorLabel = document.getElementById("errorLabel");
     errorLabel.innerText = "Enter the valid credentials!";
     errorLabel.removeAttribute("hidden", true);
-    username.style.border="2px solid #DC3545";
-    password.style.border="2px solid #DC3545";
+    username.style.border = "2px solid #DC3545";
+    password.style.border = "2px solid #DC3545";
     return false;
 }
 

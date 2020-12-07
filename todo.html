@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - To Do List</title>
+    <title>List - To Do List</title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -21,57 +21,62 @@
         crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/CSS/style.css">
-    <script src="Assets/JS/login.js"></script>
 </head>
 
 <body background="./Assets/Images/background.jpg">
+
     <!-- Navigation Bar Starts Here -->
-    <nav class="navbar navbar-dark bg-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
             <img src="./Assets/Images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""
                 loading="lazy">
             To Do List
         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-lg-8"></div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">Todo List</a>
+                <a class="nav-link" href="login.html">Log Out</a>
+            </div>
+        </div>
     </nav>
+
     <!-- Navigation Bar Ends Here -->
 
-    <div class="container" style="padding-top: 3rem;">
+    <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card">
-                    <div class="row">
-                        <div class="col-lg-6 d-none d-lg-flex">
-                            <img src="./Assets/Images/laptop.jpg" alt="Login Image" width="100%">
-                        </div>
-                        <div class="col-lg-6">
-                            <form action="home.html" onsubmit="return formValidate();">
-                                <div class="text-center" style="padding: 3rem;">
-                                    <h1 style="font-family: 'Abel', sans-serif;">Welcome Back!</h1>
-                                    <p>Sign in to continue</p>
+            <div class="col-lg-10">
+                <div class="card" style="padding: 5px;">
 
-                                    <input class="form-control roundBorder" type="text" id="username"
-                                        placeholder="Enter Username" style="margin-top: 10px;" oninput="whileTyping();">
+                    <table id="table" width=100%>
+                        <tr>
+                            <th>User ID</th>
+                            <th>ID</th>
+                            <th style="padding: 5px;">Title</th>
+                            <th>Completed</th>
+                        </tr>
 
-                                    <input class="form-control roundBorder" type="password" id="password"
-                                        placeholder="Password" style="margin-top: 10px;" oninput="whileTyping();">
-
-                                    <label class="card" id="errorLabel" for="Credential Error"
-                                        style="margin-top: 10px; border: 2px solid #DC3545; padding: 10px;"
-                                        hidden="true"></label>
-
-                                    <button class="btn btn-primary roundBorder" style="margin-top: 10px;"
-                                        type="submit">Login</button>
-
-                                </div>
-
-                            </form>
-                        </div>
+                    </table>
+                    <br>
+                    <div id="progress" class="row justify-content-center" style="padding-top: 5px;">
+                        <div class="spinner-grow text-primary"></div>
+                        <div class="spinner-grow text-success"></div>
+                        <div class="spinner-grow text-primary"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="Assets/JS/todo.js"></script>
 
 </body>
 

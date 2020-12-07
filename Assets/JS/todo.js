@@ -57,8 +57,8 @@ function checkChange() {
         }
     });
     promise.then(function () {
-        setTimeout(function(){
-        alert("Congrats. 5 Tasks have been Successfully Completed");
-        },10)
+        setTimeout(function () {
+            alert("Congrats! 5 Tasks have been Successfully Completed!");
+        }, 10)
     });
 }
